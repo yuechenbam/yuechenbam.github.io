@@ -13,7 +13,11 @@ This is a beta version, please let me know if you have any comments(yue.chen@bam
 This plugin is designed for MESO ontology and is compatible with Chowlk Convertor.
 Please click to see how to use the plugin of ontopanel:
 
-https://user-images.githubusercontent.com/90606851/135603089-4b929c01-1bd4-4ded-a9d2-b483189961e5.mp4
+
+
+https://user-images.githubusercontent.com/90606851/142880943-cba48e34-dd05-424e-91e3-b0f5308684a8.mp4
+
+
 
 ### Version
 
