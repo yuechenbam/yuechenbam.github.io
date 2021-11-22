@@ -21,7 +21,7 @@ Draw.loadPlugin(function (e) {
     n.setMaximizable(!1),
     n.setResizable(!1),
     n.setClosable(!0),
-    n.setVisible(!0),
+    n.setVisible(!1),
     e.actions.addAction("ontopanel", function () {
       n.setVisible(!n.isVisible());
     });
