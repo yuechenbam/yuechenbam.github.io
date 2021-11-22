@@ -154,7 +154,7 @@ Draw.loadPlugin(function (e) {
               });
         })
         .catch((e) => {
-          W(b, e);
+          q(b, e, "red");
         });
     },
     k = (e, t) => {
