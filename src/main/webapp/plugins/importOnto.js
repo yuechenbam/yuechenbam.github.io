@@ -392,7 +392,7 @@ Draw.loadPlugin(function (ui) {
 
   mesoBtn.addEventListener("click", (evt) => {
     evt.preventDefault();
-    fetch("/src/main/webapp/plugins/ontoData/mseo.json")
+    fetch("/src/main/webapp/plugins/ontoData/mseo_importOnto.json")
       .then((response) => {
         return response.json();
       })
