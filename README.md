@@ -10,7 +10,9 @@ This is a beta version, please let me know if you have any comments(yue.chen@bam
 
 ## Ontopanel
 
-This plugin is designed for MESO ontology and is compatible with Chowlk Convertor.
+This plugin has a built-in MSEO ontology, but users can upload their own ontologies. Registered users can also save their ontologies in the database.
+This plugin is designed as a simplified version of protege. So it should display all entities in tree structure and all details (annotations, sub-relations, equivalents, domains, ranges...) in a tree structure . If there is any information missing, you can contact me to fix the bug.
+
 Please click to see how to use the plugin of ontopanel:
 
 
