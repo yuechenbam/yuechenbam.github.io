@@ -23,6 +23,6 @@ Advanced version of the embedded chowlk converter allowing users to convert draw
 3. Adjust ontopanel to pass the new library and converter.
 
 ### Stage3 Ontopanel-convertor(datamapping) (in progress)
-Embed data mapping tool to allow users to implement data mapping in drawio.
+Embed data mapping tool to allow users to do data mapping in Drawio.
 
 ### Stage4 Ontopanel-customizedValidator(in progress)
