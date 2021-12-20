@@ -26,3 +26,8 @@ Advanced version of the embedded chowlk converter allowing users to convert draw
 Embed data mapping tool to allow users to do data mapping in Drawio.
 
 ### Stage4 Ontopanel-customizedValidator(in progress)
+
+
+## Suggestions(to change)
+1. Cant copy and pasta of entity text and details(the right click is disabled)
+2. After search, only shows superclasses, underclasses disappers, not good to know which this class contains
