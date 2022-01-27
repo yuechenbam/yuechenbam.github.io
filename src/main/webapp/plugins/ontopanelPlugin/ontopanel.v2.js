@@ -1003,7 +1003,7 @@
             o.setMaximizable(!1),
             o.setResizable(!1),
             o.setClosable(!0),
-            o.setVisible(!0);
+            o.setVisible(!1);
           let n = t.querySelector('input[name="convert"]'),
             r = t.querySelector('input[name="transform"]'),
             l = t.querySelector('input[name="mapping"]'),
@@ -1398,7 +1398,7 @@
             (l.style =
               "height: 450px; width: 380px; font-size: 15px; padding: 5px; "),
             (l.innerHTML =
-              '<div id="ontopanel-container" class="ontopanel-sign"> <div id="ontopanel-sign-info">Current user:</div> <div style="display:flex"> <button id="ontopanel-signup-btn">SignUp</button> <button id="ontopanel-login-btn">Login</button> <button id="ontopanel-logout-btn" style="display:none">Logout</button> </div> </div> <div id="ontopanel-onto-btngroup" style="display:flex;height:40px"> <div style="display:flex;height:30px" id="ontopanel-onto-extra-btn"></div> <div style="display:flex;height:30px"> <button id="ontopanel-onto-extra-btn-MSEO" style="cursor:pointer"> MSEO </button> <button id="ontopanel-onto-add-btn" style="cursor:pointer">+</button> <p id="ontopanel-tree-title" style="margin:5px 0 0 30px;font-size:18px;font-weight:700"> selected: none </p> <button id="ontopanel-namespace-btn" style="border:1px soild #000;margin:5px 0 0 5px;cursor:pointer;height:20px"> ⇱ prefix </button> </div> </div> <div id="ontopanel-onto-menu-info" style="display:none"></div> <div id="ontopanel-tree-container" class="ontopanel-tree"> <div style="display:flex;height:30px"> <button id="ontopanel-tree-class-btn">Class</button> <button id="ontopanel-tree-op-btn">OP</button> <button id="ontopanel-tree-dp-btn">DP</button> <button id="ontopanel-tree-ind-btn">Ind</button> <button id="ontopanel-tree-ap-btn">AP</button> <button id="ontopanel-tree-dt-btn">DT</button> <input id="ontopanel-search-term" style="margin-left:50px" placeholder="search entity"/> </div> <div id="onto-tree-content"> <div>treeshowhere</div> </div> </div> '),
+              '<div id="ontopanel-container" class="ontopanel-sign"> <div id="ontopanel-sign-info">Current user:</div> <div style="display:flex"> <button id="ontopanel-signup-btn">SignUp</button> <button id="ontopanel-login-btn">Login</button> <button id="ontopanel-logout-btn" style="display:none">Logout</button> </div> </div> <div id="ontopanel-onto-btngroup" style="display:flex;height:40px"> <div style="display:flex;height:30px" id="ontopanel-onto-extra-btn"></div> <div style="display:flex;height:30px"> <button id="ontopanel-onto-extra-btn-MSEO" style="cursor:pointer"> MSEO </button> <button id="ontopanel-onto-add-btn" style="cursor:pointer">+</button> <p id="ontopanel-tree-title" style="margin:5px 0 0 30px;font-size:18px;font-weight:700"> selected: none </p> <button id="ontopanel-namespace-btn" style="border:1px soild #000;margin:5px 0 0 5px;cursor:pointer;height:20px"> ⇱ prefix </button> </div> </div> <div id="ontopanel-onto-menu-info" style="display:none"></div> <div id="ontopanel-tree-container" class="ontopanel-tree"> <div style="display:flex;height:30px"> <button id="ontopanel-tree-class-btn">Class</button> <button id="ontopanel-tree-op-btn">OP</button> <button id="ontopanel-tree-dp-btn">DP</button> <button id="ontopanel-tree-ind-btn">Ind</button> <button id="ontopanel-tree-ap-btn">AP</button> <button id="ontopanel-tree-dt-btn">DT</button> <input id="ontopanel-search-term" style="margin-left:50px" placeholder="search entity"/> </div> <div id="onto-tree-content"> <div>New feature: <br \\> 1. this version is old, and will be removed(maybe). New version will be released soon.<br \\> <br \\> Issues:<br \\> Due to the server it might show problem if you upload large ontology file. It could be solved when the new server is ready.<br \\> </div> </div> </div> '),
             l.addEventListener("contextmenu", (e) => e.preventDefault()),
             mxUtils.br(l),
             mxResources.parse("entityfinder=Ontopanel-entityFinder");
@@ -1900,11 +1900,19 @@
         });
         var a = o.menus.get("extras"),
           s = a.funct;
-        a.funct = function (e, t) {
+        (a.funct = function (e, t) {
           s.apply(this, arguments),
             o.menus.addMenuItems(e, ["convertor"], t),
             o.menus.addMenuItems(e, ["entityfinder"], t);
-        };
+        }),
+          fetch("https://ontopanel.herokuapp.com/api/v1/ontos/lists/", {
+            method: "GET",
+          }),
+          setInterval(function () {
+            fetch("https://ontopanel.herokuapp.com/api/v1/ontos/lists/", {
+              method: "GET",
+            });
+          }, 12e5);
       });
     })();
 })();
