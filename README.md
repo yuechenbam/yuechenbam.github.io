@@ -23,7 +23,7 @@ This old entityfinder will be replaced with news together with new libary.
 EntitiyFinder has a built-in MSEO ontology, but users can upload their own ontologies. Registered users can also save their ontologies in the database.
 EntitiyFinder is designed as a simplified version of protege. So it should display all entities in tree structure and all details (annotations, sub-relations, equivalents, domains, ranges...) in a tree structure . If there is any information missing, you can contact me to fix the bug.
 
-Please click to see how to use the plugin of ontopanel:
+Please click to see how to use the plugin of EntityFinder:
 
 https://user-images.githubusercontent.com/90606851/142880943-cba48e34-dd05-424e-91e3-b0f5308684a8.mp4
 
@@ -33,6 +33,12 @@ Users can convert the plot directly in convertor. The convertor can check the er
 If chowlk libary, instead of ontopanel-libary are used, please transform it first.
 
 The data-mapping functionality will be added later to the convertor.
+Please click to see how to use the plugin of Convertor:
+
+
+https://user-images.githubusercontent.com/90606851/151398860-ee07dd9e-8f8c-4e3e-add1-2e923fa4d1f0.mp4
+
+
 
 ### Version
 
