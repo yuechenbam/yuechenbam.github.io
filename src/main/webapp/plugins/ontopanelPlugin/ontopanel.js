@@ -645,7 +645,7 @@
           updateOntoBtn = (t, o) => {
             let n = this.app.querySelector("#" + o),
               r = t.title;
-            n.innerText = r;
+            n.querySelector('div[name="button-name"]').textContent = r;
             const i = "entityfinderold-onto-extra-btn-" + r;
             (n.id = i),
               e.modifyOntoBank([o, null], "delete"),
@@ -852,8 +852,8 @@
             x = y.view.scale,
             v = b.x / x - f.x - l,
             w = g.y / x - f.y;
-          const P = [u];
-          y.importCells(P, v, w);
+          const S = [u];
+          y.importCells(S, v, w);
         },
         s = (t, o) => {
           let n = t.replace("li-term-", ""),
@@ -927,15 +927,15 @@
         x = o.n(f),
         v = o(589),
         w = o.n(v),
-        P = o(119),
-        S = {};
-      (S.styleTagTransform = w()),
-        (S.setAttributes = g()),
-        (S.insert = y().bind(null, "head")),
-        (S.domAPI = h()),
-        (S.insertStyleElement = x()),
-        c()(P.Z, S),
-        P.Z && P.Z.locals && P.Z.locals;
+        S = o(119),
+        P = {};
+      (P.styleTagTransform = w()),
+        (P.setAttributes = g()),
+        (P.insert = y().bind(null, "head")),
+        (P.domAPI = h()),
+        (P.insertStyleElement = x()),
+        c()(S.Z, P),
+        S.Z && S.Z.locals && S.Z.locals;
       let k = new (class {
         constructor() {
           (this.mesoNamespace = [
@@ -1061,8 +1061,11 @@
               (o.onclick = (t) => {
                 t.preventDefault(),
                   t.stopPropagation(),
-                  (e.style.display = "none"),
-                  new T(this.app).updateTigger();
+                  (e.style.display = "none");
+                let o = new T(this.app);
+                o.updateTigger(this.btn.id),
+                  (o.ontoForm.querySelector('input[name="formName"]').value =
+                    this.data.title);
               }),
               (t.onclick = (t) => {
                 t.preventDefault(),
@@ -1302,7 +1305,7 @@
           updateOntoBtn = (e, t) => {
             let o = this.app.querySelector("#" + t),
               n = e.title;
-            o.innerText = n;
+            o.querySelector('div[name="button-name"]').textContent = n;
             const r = "ontopanel-onto-extra-btn-" + n;
             (o.id = r),
               k.modifyOntoBank([t, null], "delete"),
@@ -1545,9 +1548,9 @@
             x = b.view.translate,
             v = b.view.scale,
             w = g.x / v - x.x - a,
-            P = f.y / v - x.y;
-          const S = [u];
-          b.importCells(S, w, P);
+            S = f.y / v - x.y;
+          const P = [u];
+          b.importCells(P, w, S);
         },
         q = (e, t, o) => {
           let n = t.replace("li-term-", ""),
