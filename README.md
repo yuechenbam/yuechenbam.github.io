@@ -10,43 +10,55 @@ This is a beta version, please let me know if you have any comments(yue.chen@bam
 
 ## Ontopanel
 
-The Ontopanel plugin contains three parts(tools): OntoLibary, EntityFinder, and Convertor
+The Ontopanel plugin contains three parts(tools): Ontopanel-Libary, EntityFinder, and Convertor
 
-### OntoLibary
+### Ontopanel-Library
 
-The libary is designed for whole Ontopanel plugin. It is based on Chowlk libary, but has some different features. These features are so designed, that users can convert and map-data in the plugin. It will be released later.
+The library is designed for whole Ontopanel plugin. It is based on Chowlk libary, but has some different features.
 
-### EntityFinder(old)
+1. Load automatically in the sidebar.
+2. Each shape has hover effect and shape data.
+3. All the shape contains a "Type" attribute, Class, ObjectProperty, DatatypeProperty, AnnotationProperty, DataType, DataValue and Individual contain also "IRI" attribute.
+4. "Type", "IRI_XX", "Mapping_XX" are preserved words, try not to use them for other purposes in shape data.
 
-This old entityfinder will be replaced with news together with new libary.
+### Ontopanel-EntityFinder
 
+EntityFinder is a tool that allows user to upload their ontologies and export in drawio.
 EntitiyFinder has a built-in MSEO ontology, but users can upload their own ontologies. Registered users can also save their ontologies in the database.
 EntitiyFinder is designed as a simplified version of protege. So it should display all entities in tree structure and all details (annotations, sub-relations, equivalents, domains, ranges...) in a tree structure . If there is any information missing, you can contact me to fix the bug.
+
+#### New features
+
+1. User can select to show all entities in URI or RDFLabel
+2. Together with Ontopanel-Library, entities can be showed in RDFLabel in the plot, IRI is saved in shape data.
+
+#### EntityFinder(old)
+
+The old version, which is suitable for chowlk library. It contains most features.
 
 Please click to see how to use the plugin of EntityFinder:
 
 https://user-images.githubusercontent.com/90606851/142880943-cba48e34-dd05-424e-91e3-b0f5308684a8.mp4
 
-### Convertor
+### Ontopanel-Convertor
 
-Users can convert the plot directly in convertor. The convertor can check the errors that are made in plot.
-If chowlk libary, instead of ontopanel-libary are used, please transform it first.
+Convertor that convert current plot to owl ontology.
 
-The data-mapping functionality will be added later to the convertor.
+1. It can check the errors that are made in plot.
+2. User can download the file.
+3. User can realize data-mapping.(Under development)
+4. If chowlk libary, instead of ontopanel-libary are used, please transform it first.
+
 Please click to see how to use the plugin of Convertor:
-
 
 https://user-images.githubusercontent.com/90606851/151398860-ee07dd9e-8f8c-4e3e-add1-2e923fa4d1f0.mp4
 
-
-
 ### Version
 
-**27.01.2022(latest):**
+**01.02.2022(latest):**
 
-- new version Ontopanel is released.
-  - Convertor are added. User can convertor plot to OWL directly.
-  - New EntityFinder and ontoLibary will be relased soon.
+- new version Ontopanel-pipeline is released.
+  - library, entityfinder, and convertor are added.
 
 **22.11.2021:**
 
