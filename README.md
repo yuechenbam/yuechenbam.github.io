@@ -38,7 +38,11 @@ The old version, which is suitable for chowlk library. It contains most features
 
 Please click to see how to use the plugin of EntityFinder:
 
-https://user-images.githubusercontent.com/90606851/142880943-cba48e34-dd05-424e-91e3-b0f5308684a8.mp4
+
+
+https://user-images.githubusercontent.com/90606851/151941411-dbd18f0b-908b-4334-a412-c24f866bc9f4.mp4
+
+
 
 ### Ontopanel-Convertor
 
