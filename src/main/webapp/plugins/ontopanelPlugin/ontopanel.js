@@ -9,7 +9,7 @@
           l = o.n(i)()(r());
         l.push([
           e.id,
-          ".error-list{margin-top:5px;overflow:auto;padding:5px}.error-list .error-type{font-size:14px;background-color:#d3d3d3;font-weight:bold}.error-list ul{padding-left:12px}.error-list ul li{margin:10px;cursor:pointer}.error-list hr{border-top:2px solid #000;margin-bottom:5px}.mapping-tool form{display:flex}.mapping-tool form .selector{border:1px solid #777;border-radius:4px;padding:0 px;width:80px;background-color:#fff;position:relative}.mapping-tool form .selector label{width:100%;font-size:8px;text-transform:uppercase;color:#777;padding:0 5px;position:absolute;top:4px}.mapping-tool form .selector select{margin-top:10px;width:100%;background-color:#fff;border:0px;height:17px}.mapping-tool form .selector input{margin-top:10px;width:95%;background-color:#fff;border:0px;height:17px}.mapping-tool form input{border:none;border-radius:2px;cursor:pointer;color:#000;background-color:#d3d3d3}.mapping-tool form input:hover{background-color:gray}.mapping-tool .mapping-table{height:290px;width:100%;overflow:auto}.mapping-tool .mapping-table table{height:100%;width:100%;border-collapse:collapse}.mapping-tool .mapping-table table th{font-size:13px;border:1px solid #000;position:sticky;top:0px;text-align:left;background-color:#a9a9a9;color:#000;padding:5px}.mapping-tool .mapping-table table th input{margin-right:3px;padding:0px;border:none;cursor:pointer;font-size:11px;background-color:transparent}.mapping-tool .mapping-table table th input:hover{background-color:#d3d3d3}.mapping-tool .mapping-table table tr:nth-child(odd){background-color:#ddd}.mapping-tool .mapping-table table td{border:1px solid #000;text-align:left;font-size:11px;padding:5px}.mapping-tool .mapping-count{font-size:11px;font-weight:bold}.convertor-container{width:100%;height:100%}.convertor-container .convertor-bar{height:30px;min-width:150px;margin-bottom:10px;display:flex}.convertor-container .convertor-bar select{border:none;border-radius:2px}.convertor-container .convertor-bar input{padding:5px;border:none;border-radius:2px;font-size:15px;cursor:pointer;color:#fff;background-color:#4682b4}.convertor-container .convertor-bar input:hover{background-color:#00008b}.convertor-container .transformer{font-size:12px;display:flex;margin-bottom:8px}.convertor-container .transformer input{margin-left:5px;padding:2px;border:none;border-radius:2px;cursor:pointer;color:#fff;background-color:#4682b4}.convertor-container .transformer input:hover{background-color:#00008b}.convertor-container .convertor-show{border:1px solid #000;height:360px}.convertor-container .convertor-show .convertor-btn-group{display:flex;width:100%}.convertor-container .convertor-show .convertor-btn-group input{width:100%;padding:5px;border:none;border-radius:2px;font-size:15px;cursor:pointer;color:#fff;background-color:#4682b4}.convertor-container .convertor-show .convertor-btn-group input:hover{background-color:#00008b}.convertor-container .convertor-show .convertor-content{font-size:14px;height:340px;overflow:auto}",
+          ".error-list{margin-top:5px;overflow:auto;padding:5px}.error-list .error-type{font-size:14px;background-color:#d3d3d3;font-weight:bold}.error-list ul{padding-left:12px}.error-list ul li{margin:10px;cursor:pointer}.error-list hr{border-top:2px solid #000;margin-bottom:5px}.mapping-tool form{display:flex}.mapping-tool form .selector{border:1px solid #777;border-radius:4px;padding:0 px;width:80px;background-color:#fff;position:relative}.mapping-tool form .selector label{width:100%;font-size:8px;text-transform:uppercase;color:#777;padding:0 5px;position:absolute;top:4px}.mapping-tool form .selector select{margin-top:10px;width:100%;background-color:#fff;border:0px;height:17px}.mapping-tool form .selector input{margin-top:10px;width:95%;background-color:#fff;border:0px;height:17px}.mapping-tool form .file-upload input{height:17px;width:50px;border:none;border-radius:2px;cursor:pointer;color:#000;background-color:#d3d3d3}.mapping-tool form .file-upload input:hover{background-color:gray}.mapping-tool form input{border:none;border-radius:2px;cursor:pointer;color:#000;background-color:#d3d3d3}.mapping-tool form input:hover{background-color:gray}.mapping-tool .mapping-error{display:none;color:red}.mapping-tool .mapping-table{height:290px;width:100%;overflow:auto}.mapping-tool .mapping-table table{height:100%;width:100%;border-collapse:collapse}.mapping-tool .mapping-table table th{font-size:13px;border:1px solid #000;position:sticky;top:0px;text-align:left;background-color:#a9a9a9;color:#000;padding:5px}.mapping-tool .mapping-table table th input{margin-right:3px;padding:0px;border:none;cursor:pointer;font-size:11px;background-color:transparent}.mapping-tool .mapping-table table th input:hover{background-color:#d3d3d3}.mapping-tool .mapping-table table tr:nth-child(odd){background-color:#ddd}.mapping-tool .mapping-table table td{border:1px solid #000;text-align:left;font-size:11px;padding:5px}.mapping-tool .mapping-count{font-size:11px;font-weight:bold}.convertor-container{width:100%;height:100%}.convertor-container .convertor-bar{height:30px;min-width:150px;margin-bottom:10px;display:flex;align-items:center}.convertor-container .convertor-bar select{height:100%;border:none;border-radius:2px}.convertor-container .convertor-bar input{padding:5px;border:none;border-radius:2px;font-size:15px;cursor:pointer;color:#fff;background-color:#4682b4}.convertor-container .convertor-bar input:hover{background-color:#00008b}.convertor-container .convertor-bar .mapping-info{margin-left:5px;font-size:12px;color:#a9a9a9}.convertor-container .transformer{font-size:12px;display:flex;margin-bottom:8px}.convertor-container .transformer input{margin-left:5px;padding:2px;border:none;border-radius:2px;cursor:pointer;color:#fff;background-color:#4682b4}.convertor-container .transformer input:hover{background-color:#00008b}.convertor-container .convertor-show{border:1px solid #000;height:360px}.convertor-container .convertor-show .convertor-btn-group{display:flex;width:100%}.convertor-container .convertor-show .convertor-btn-group input{width:100%;padding:5px;border:none;border-radius:2px;font-size:15px;cursor:pointer;color:#fff;background-color:#4682b4}.convertor-container .convertor-show .convertor-btn-group input:hover{background-color:#00008b}.convertor-container .convertor-show .convertor-content{font-size:14px;height:340px;overflow:auto}",
           "",
         ]);
         const a = l;
@@ -701,22 +701,22 @@
                 m = p.children[3],
                 y = u.children[0];
               y.innerHTML = t[0];
-              let b = "li-term-" + y.innerText;
+              let g = "li-term-" + y.innerText;
               if (
-                ((y.id = b),
+                ((y.id = g),
                 (y.onclick = (e) => {
                   e.preventDefault();
                   let t = u.children[1],
-                    o = l(b, t);
+                    o = l(g, t);
                   t.replaceWith(o),
                     (t.style.display = "block"),
                     t.scrollIntoView({ block: "nearest", inline: "center" });
                 }),
                 (h.onclick = (t) => {
-                  a(b, e, n, t);
+                  a(g, e, n, t);
                 }),
                 (m.onclick = (t) => {
-                  s(b, e);
+                  s(g, e);
                 }),
                 r.appendChild(d),
                 t[1].length)
@@ -842,16 +842,16 @@
                 (l = m.width + h + 30);
           }
           let y = o.editor.graph,
-            b = mxUtils.convertPoint(y.container, n.getX(), n.getY()),
-            g = mxUtils.convertPoint(
+            g = mxUtils.convertPoint(y.container, n.getX(), n.getY()),
+            b = mxUtils.convertPoint(
               y.container,
               mxEvent.getClientX(r),
               mxEvent.getClientY(r)
             ),
             f = y.view.translate,
             x = y.view.scale,
-            v = b.x / x - f.x - l,
-            w = g.y / x - f.y;
+            v = g.x / x - f.x - l,
+            w = b.y / x - f.y;
           const P = [u];
           y.importCells(P, v, w);
         },
@@ -921,8 +921,8 @@
         h = o.n(u),
         m = o(569),
         y = o.n(m),
-        b = o(565),
-        g = o.n(b),
+        g = o(565),
+        b = o.n(g),
         f = o(216),
         x = o.n(f),
         v = o(589),
@@ -930,7 +930,7 @@
         P = o(119),
         S = {};
       (S.styleTagTransform = w()),
-        (S.setAttributes = g()),
+        (S.setAttributes = b()),
         (S.insert = y().bind(null, "head")),
         (S.domAPI = h()),
         (S.insertStyleElement = x()),
@@ -1537,20 +1537,20 @@
                 (i = { label: c, Type: d, IRI: s.EntityIRI });
           }
           let y = L(i),
-            b = o.editor.graph;
-          b.getModel().setValue(u, y);
-          let g = mxUtils.convertPoint(b.container, n.getX(), n.getY()),
+            g = o.editor.graph;
+          g.getModel().setValue(u, y);
+          let b = mxUtils.convertPoint(g.container, n.getX(), n.getY()),
             f = mxUtils.convertPoint(
-              b.container,
+              g.container,
               mxEvent.getClientX(r),
               mxEvent.getClientY(r)
             ),
-            x = b.view.translate,
-            v = b.view.scale,
-            w = g.x / v - x.x - a,
+            x = g.view.translate,
+            v = g.view.scale,
+            w = b.x / v - x.x - a,
             P = f.y / v - x.y;
           const S = [u];
-          b.importCells(S, w, P);
+          g.importCells(S, w, P);
         },
         D = (e, t, o) => {
           let n = t.replace("li-term-", ""),
@@ -1694,35 +1694,44 @@
           return t;
         };
       var H = o(431),
-        R = {};
-      (R.styleTagTransform = w()),
-        (R.setAttributes = g()),
-        (R.insert = y().bind(null, "head")),
-        (R.domAPI = h()),
-        (R.insertStyleElement = x()),
-        c()(H.Z, R),
+        F = {};
+      (F.styleTagTransform = w()),
+        (F.setAttributes = b()),
+        (F.insert = y().bind(null, "head")),
+        (F.domAPI = h()),
+        (F.insertStyleElement = x()),
+        c()(H.Z, F),
         H.Z && H.Z.locals && H.Z.locals;
-      var F = o(398),
+      var R = o(398),
         z = {};
       (z.styleTagTransform = w()),
-        (z.setAttributes = g()),
+        (z.setAttributes = b()),
         (z.insert = y().bind(null, "head")),
         (z.domAPI = h()),
         (z.insertStyleElement = x()),
-        c()(F.Z, z),
-        F.Z && F.Z.locals && F.Z.locals;
+        c()(R.Z, z),
+        R.Z && R.Z.locals && R.Z.locals;
       let N = new (class {
         constructor() {
-          (this.errors = null), (this.result = null), (this.mappingData = null);
+          (this.errors = null),
+            (this.result = null),
+            (this.mappingfile = "None"),
+            (this.mappingData = null);
         }
         modifyData = (e) => {
           (this.errors = e.errors), (this.result = e.result);
         };
         resetData = () => {
-          (this.errors = null), (this.result = null), (this.mappingData = null);
+          (this.errors = null),
+            (this.result = null),
+            (this.mappingfile = "None"),
+            (this.mappingData = null);
         };
-        modifyMappingData = (e) => {
-          this.mappingData = e;
+        modifyMappingData = (e, t) => {
+          (this.mappingfile = e), (this.mappingData = t);
+        };
+        resetMappingData = () => {
+          (this.mappingfile = "None"), (this.mappingData = null);
         };
       })();
       const V = (e, t, o) => {
@@ -1779,7 +1788,7 @@
             (o.style =
               "height: 430px; width: 380px; font-size: 15px; padding: 5px; "),
             (o.innerHTML =
-              '<div class="convertor-container"> <div class="transformer"> <div>If you used the chowlk libary, please transform first.</div> <input type="button" name="transform" value="transform"/> </div> <div class="convertor-bar"> <select name="rdf-format"> <option value="application/rdf+xml">rdf/xml</option> <option value="turtle">turtle</option> </select> <input type="button" name="convert" value="Convert"/> <div class="convert-info"></div> </div> <div class="convertor-show"> <div class="convertor-btn-group"> <input type="button" name="mapping" value="Mapping"/> <input type="button" name="result" value="Result"/> <input type="button" name="show-error" value="ShowError"/> <input type="button" value="&#x2193;" style="width:30px;background-color:#dc143c" name="download"/> </div> <div class="convertor-content"> <div> <b>New Tool</b><br> 1. This tool can convert plot to ontology, check errors, map dataset(under development), and download file.<br> 2. It is designed with other ontopanel tools(library, entityFinder).<br> 3. If your files contains chowlk library shapes, please transform it first.<br> </div> </div> </div> </div> '),
+              '<div class="convertor-container"> <div class="transformer"> <div>If you used the chowlk libary, please transform first.</div> <input type="button" name="transform" value="transform"/> </div> <div class="convertor-bar"> <select name="rdf-format"> <option value="application/rdf+xml">rdf/xml</option> <option value="turtle">turtle</option> </select> <input type="button" name="convert" value="Convert"/> <div class="mapping-info">With MappingFile: None</div> </div> <div class="convertor-show"> <div class="convertor-btn-group"> <input type="button" name="mapping" value="Mapping"/> <input type="button" name="result" value="Result"/> <input type="button" name="show-error" value="ShowError"/> <input type="button" value="&#x2193;" style="width:30px;background-color:#dc143c" name="download"/> </div> <div class="convertor-content"> <div> <b>New Tool</b><br> 1. This tool can convert plot to ontology, check errors, map dataset(under development), and download file.<br> 2. It is designed with other ontopanel tools(library, entityFinder).<br> 3. If your files contains chowlk library shapes, please transform it first.<br> </div> </div> </div> </div> '),
             o.addEventListener("contextmenu", (e) => e.preventDefault()),
             mxUtils.br(o),
             mxResources.parse("convertor=Ontopanel-convertor");
@@ -1803,10 +1812,11 @@
             l = o.querySelector('input[name="mapping"]'),
             a = o.querySelector('input[name="result"]'),
             s = o.querySelector('input[name="show-error"]'),
-            d = o.querySelector(".convertor-content"),
-            p = o.querySelector('input[name="download"]'),
+            d = o.querySelector(".convertor-content");
+          d.addEventListener("contextmenu", (e) => e.stopPropagation());
+          let p = o.querySelector('input[name="download"]'),
             c =
-              (o.querySelector(".convert-info"),
+              (o.querySelector(".mapping-info"),
               new (class {
                 constructor(e, t) {
                   (this.app = e), this.init(), (this.ui = t);
@@ -1814,91 +1824,126 @@
                 init() {
                   let e = document.createElement("div");
                   (e.innerHTML =
-                    '<div class="mapping-tool"> <form action="multipart/form-data"> <input type="file" id="myfile" name="myfile" required value="upload" style="max-width:190px"/> <div class="selector"> <label>filetype</label> <select name="filetype"> <option value="excel">excel</option> </select> </div> <div class="selector"> <label>decimal</label> <select name="decimal"> <option value=".">.</option> <option value=",">,</option> </select> </div> <div class="selector"> <label>NRow</label> <input type="number" name="startRow" value="0" required min="0"> </div> <input type="submit" name="submit"/> </form> <div> <div class="mapping-table"> <div style="height:290px;width:100%"> Under development </div>  </div> <div class="mapping-count"> Rows:0; Columns:0; Only shows the first 100. </div> </div> </div> '),
-                    (this.mappingWindow = e),
-                    (e.querySelector("form").onsubmit = (e) => {
-                      e.preventDefault();
-                      let t = new FormData(e.target);
-                      this.processTable(t);
-                    });
+                    '<div class="mapping-tool"> <form action="multipart/form-data"> <input type="file" name="myfile" required value="upload" style="max-width:90px"/> <div class="selector"> <label>filetype</label> <select name="filetype"> <option value="excel">excel</option> </select> </div> <div class="selector"> <label>decimal</label> <select name="decimal"> <option value=".">.</option> <option value=",">,</option> </select> </div> <div class="selector"> <label>NRow</label> <input type="number" name="startRow" value="0" required min="0"> </div> <input type="submit" name="submit"/> </form> <div> <div class="mapping-error"></div> <div class="mapping-table"> <div style="height:290px;width:100%"> Under development </div>  </div> <div class="mapping-count"> Rows:0; Columns:0; Only shows the first 100. </div> </div> </div>'),
+                    (this.mappingWindow = e);
+                  let t = e.querySelector("form");
+                  t.onsubmit = (e) => {
+                    e.preventDefault();
+                    let o = new FormData(e.target);
+                    this.processTable(o), t.reset();
+                  };
                 }
                 processTable = (e) => {
                   fetch(t + "api/v1/convertor/formtable/", {
                     method: "POST",
                     body: e,
                   })
-                    .then((e) => {
-                      e.ok
-                        ? e.json().then((e) => {
-                            let t = JSON.parse(e);
-                            N.modifyMappingData(t), this.makeTable();
+                    .then((t) => {
+                      t.ok
+                        ? t.json().then((t) => {
+                            let o = JSON.parse(t),
+                              n = e.get("myfile").name;
+                            N.modifyMappingData(n, o), this.makeTable();
                           })
-                        : e.json().then((e) => {});
+                        : t.json().then((e) => {
+                            let t = Object.keys(e)[0];
+                            this.showError(e[t]);
+                          });
                     })
-                    .catch((e) => {});
-                };
-                makeTable = () => {
-                  let e = N.mappingData;
-                  if (e) {
-                    let t = document.createElement("table"),
-                      o = document.createElement("tr");
-                    t.appendChild(o);
-                    let n = Object.keys(e),
-                      r = Object.keys(e[n[0]]);
-                    n.forEach((e) => {
-                      let t = document.createElement("th"),
-                        n = ((e, t) => {
-                          let o = document.createElement("div");
-                          (o.style.display = "flex"),
-                            (o.style.flexDirection = "row");
-                          var n = document.createElement("input");
-                          return (
-                            (n.type = "button"),
-                            (n.value = "🔗"),
-                            (n.onclick = (o) => {
-                              o.preventDefault();
-                              let n = t.editor.graph.getSelectionCells();
-                              n &&
-                                n.forEach((o) => {
-                                  let n = o.value;
-                                  if ("object" == typeof n) {
-                                    let r = /(\(.*\))/g,
-                                      i = o
-                                        .getAttribute("Type", "none")
-                                        .replace(r, "")
-                                        .trim()
-                                        .toLowerCase();
-                                    ["individual", "datavalue"].includes(i) &&
-                                      (n.setAttribute("MappingCol", e),
-                                      t.editor.graph.model.setValue(o, n));
-                                  }
-                                });
-                            }),
-                            o.appendChild(n),
-                            o.appendChild(document.createTextNode(e)),
-                            o
-                          );
-                        })(e, this.ui);
-                      t.appendChild(n), o.appendChild(t);
+                    .catch((e) => {
+                      this.showError(e);
                     });
-                    let i = r.length > 100 ? r.slice(0, 100) : r;
-                    for (let o of i) {
-                      let r = document.createElement("tr");
-                      for (let t of n) {
-                        let n = document.createElement("td"),
-                          i = e[t][o];
-                        (n.innerText = i), r.appendChild(n);
-                      }
-                      t.appendChild(r);
-                    }
-                    let l = r.length,
-                      a = n.length;
+                };
+                showError = (e) => {
+                  let t = document.createElement("div");
+                  (t.innerText = e),
+                    (t.style.color = "red"),
                     this.mappingWindow
                       .querySelector(".mapping-table")
                       .firstElementChild.replaceWith(t),
+                    (this.app.querySelector(".mapping-info").innerText =
+                      "With MappingFile: None"),
+                    N.resetMappingData();
+                };
+                makeTable = () => {
+                  let e = N.mappingData,
+                    t = N.mappingfile,
+                    o = this.mappingWindow.querySelector(".mapping-error");
+                  if (e) {
+                    let n = document.createElement("table"),
+                      r = document.createElement("tr");
+                    n.appendChild(r);
+                    let i = Object.keys(e),
+                      l = Object.keys(e[i[0]]);
+                    i.forEach((e) => {
+                      let t = document.createElement("th"),
+                        n = ((e, t, o) => {
+                          let n = document.createElement("div");
+                          (n.style.display = "flex"),
+                            (n.style.flexDirection = "row");
+                          var r = document.createElement("input");
+                          return (
+                            (r.type = "button"),
+                            (r.value = "🔗"),
+                            (r.onclick = (n) => {
+                              n.preventDefault();
+                              let r = t.editor.graph.getSelectionCells();
+                              r &&
+                                r.forEach((n) => {
+                                  let r = n.value;
+                                  if ("object" == typeof r) {
+                                    let i = /(\(.*\))/g,
+                                      l = n
+                                        .getAttribute("Type", "none")
+                                        .replace(i, "")
+                                        .trim()
+                                        .toLowerCase();
+                                    ["individual", "datavalue"].includes(l)
+                                      ? (r.setAttribute("MappingCol", e),
+                                        t.editor.graph.model.setValue(n, r))
+                                      : ((o.innerText =
+                                          "Mapping is only possible for individual or datavalue."),
+                                        (o.style.display = "block"),
+                                        setTimeout(() => {
+                                          o.style.display = "none";
+                                        }, 5e3));
+                                  } else
+                                    (o.innerText =
+                                      "This shape is not from ontopanel-library."),
+                                      (o.style.display = "block"),
+                                      setTimeout(() => {
+                                        o.style.display = "none";
+                                      }, 5e3);
+                                });
+                            }),
+                            n.appendChild(r),
+                            n.appendChild(document.createTextNode(e)),
+                            n
+                          );
+                        })(e, this.ui, o);
+                      t.appendChild(n), r.appendChild(t);
+                    });
+                    let a = l.length > 100 ? l.slice(0, 100) : l;
+                    for (let t of a) {
+                      let o = document.createElement("tr");
+                      for (let n of i) {
+                        let r = document.createElement("td"),
+                          i = e[n][t];
+                        (r.innerText = i), o.appendChild(r);
+                      }
+                      n.appendChild(o);
+                    }
+                    let s = l.length,
+                      d = i.length;
+                    this.mappingWindow
+                      .querySelector(".mapping-table")
+                      .firstElementChild.replaceWith(n),
                       (this.mappingWindow.querySelector(
                         ".mapping-count"
-                      ).innerText = `Rows:${l}; Columns:${a}; Only shows the first 100.`);
+                      ).innerText = `Rows:${s}; Columns:${d}; Only shows the first 100.`),
+                      (this.app.querySelector(
+                        ".mapping-info"
+                      ).innerText = `With MappingFile: ${t}`);
                   }
                 };
               })(o, e));
@@ -2246,11 +2291,7 @@
                   fileData: r,
                   mappingData: N.mappingData,
                 };
-              console.log(JSON.stringify(i)),
-                N.modifyData({
-                  result: "In process, please wait",
-                  errors: null,
-                }),
+              N.modifyData({ result: "In process, please wait", errors: null }),
                 a.click(),
                 fetch(t + "api/v1/convertor/", {
                   method: "POST",
