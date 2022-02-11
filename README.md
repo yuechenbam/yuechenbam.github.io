@@ -29,7 +29,8 @@ EntitiyFinder is designed as a simplified version of protege. So it should displ
 
 #### New features
 
-1. User can select to show all entities in URI or RDFLabel
+1. User can select to show all entities in URI or RDFLabel.
+
 2. Together with Ontopanel-Library, entities can be showed in RDFLabel in the plot, IRI is saved in shape data.
 
 #### EntityFinder(old)
@@ -38,7 +39,8 @@ The old version, which is suitable for chowlk library. It contains most features
 
 Please click to see how to use the plugin of EntityFinder:
 
-https://user-images.githubusercontent.com/90606851/151941531-e1e05b48-3af0-4cf6-b3eb-7068dda92264.mp4
+https://user-images.githubusercontent.com/90606851/153627154-461022aa-f002-4fcd-ab5a-363996754233.mp4
+
 
 ### Ontopanel-Convertor
 
@@ -46,20 +48,24 @@ Convertor that convert current plot to owl ontology.
 
 1. It can check the errors that are made in plot.
 2. User can download the file.
-3. User can realize data-mapping.(Under development)
+3. User can realize data-mapping.
 4. If chowlk libary, instead of ontopanel-libary are used, please transform it first.
 
 Please click to see how to use the plugin of Convertor:
 
-https://user-images.githubusercontent.com/90606851/151398860-ee07dd9e-8f8c-4e3e-add1-2e923fa4d1f0.mp4
+https://user-images.githubusercontent.com/90606851/153622067-b3c062b1-92ee-470e-a685-1d3549b85216.mp4
 
 ### Version(more in ChangeLog)
 
 **11.02.2022(latest):**
 
 - activate copy function(right click)
-- data mapping for excel file is available
+- convertor
+  - data mapping for excel file is available
   - add stroke colors to the mapping shapes for better identification
+- entityfinder
+  - update and delete uploaded ontologies(right click ontology name button)
+ 
 
 **01.02.2022:**
 
