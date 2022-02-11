@@ -1160,8 +1160,7 @@
               });
           }
           addTrigger = () => {
-            (this.uploaderBox.style.display = "block"),
-              console.log(this.uploaderBox);
+            this.uploaderBox.style.display = "block";
             let e = this.ontoForm.querySelector('button[name="upload"]');
             this.updateOrAddBtn("add"),
               (e.onclick = (e) => {
@@ -1536,21 +1535,22 @@
                 (a = 8 * h + 20 + 30),
                 (i = { label: c, Type: d, IRI: s.EntityIRI });
           }
-          let y = L(i),
-            g = o.editor.graph;
-          g.getModel().setValue(u, y);
-          let b = mxUtils.convertPoint(g.container, n.getX(), n.getY()),
-            f = mxUtils.convertPoint(
-              g.container,
+          let y = mxUtils.createXmlDocument().createElement("object"),
+            g = L(y, i),
+            b = o.editor.graph;
+          b.getModel().setValue(u, g);
+          let f = mxUtils.convertPoint(b.container, n.getX(), n.getY()),
+            x = mxUtils.convertPoint(
+              b.container,
               mxEvent.getClientX(r),
               mxEvent.getClientY(r)
             ),
-            x = g.view.translate,
-            v = g.view.scale,
-            w = b.x / v - x.x - a,
-            P = f.y / v - x.y;
-          const S = [u];
-          g.importCells(S, w, P);
+            v = b.view.translate,
+            w = b.view.scale,
+            P = f.x / w - v.x - a,
+            S = x.y / w - v.y;
+          const k = [u];
+          b.importCells(k, P, S);
         },
         D = (e, t, o) => {
           let n = t.replace("li-term-", ""),
@@ -1567,7 +1567,8 @@
                   let s = /(\(.*\))/g,
                     d = t.style,
                     p = B(t, l),
-                    c = a.replace(s, "").trim().toLowerCase();
+                    c = a.replace(s, "").trim().toLowerCase(),
+                    u = t.value;
                   switch (i.toLowerCase()) {
                     case "datatype":
                       if ("datavalue" === c) {
@@ -1576,12 +1577,12 @@
                             Type: a,
                             IRI_DT: r.EntityIRI,
                           },
-                          i = L(n);
+                          i = L(u, n);
                         o.editor.graph.model.setStyle(t, p),
                           o.editor.graph.model.setValue(t, i);
                       } else if ("datatype" === c) {
                         let n = { label: e, Type: a, IRI: r.EntityIRI },
-                          i = L(n);
+                          i = L(u, n);
                         o.editor.graph.model.setStyle(t, p),
                           o.editor.graph.model.setValue(t, i);
                       } else {
@@ -1600,8 +1601,9 @@
                               IRI_DP: i,
                               IRI_DT: r.EntityIRI,
                             },
-                            d = L(s);
-                          o.editor.graph.model.setValue(t, d);
+                            d = L(u, s);
+                          o.editor.graph.model.setStyle(t, p),
+                            o.editor.graph.model.setValue(t, d);
                         }
                       }
                       break;
@@ -1610,7 +1612,7 @@
                         throw "The selected shape is not a datatypeproperty!";
                       if (d.includes("rhombus") | t.isEdge()) {
                         let i = { label: j(n, e), Type: a, IRI: r.EntityIRI },
-                          l = L(i);
+                          l = L(u, i);
                         o.editor.graph.model.setStyle(t, p),
                           o.editor.graph.model.setValue(t, l);
                       } else {
@@ -1624,9 +1626,9 @@
                             IRI_DP: r.EntityIRI,
                             IRI_DT: d,
                           },
-                          u = L(c);
+                          h = L(u, c);
                         o.editor.graph.model.setStyle(t, p),
-                          o.editor.graph.model.setValue(t, u);
+                          o.editor.graph.model.setValue(t, h);
                       }
                       break;
                     default:
@@ -1636,7 +1638,7 @@
                         let i = j(n, e);
                         "individual" === c && (i = "<u>" + i + "</u>");
                         let l = { label: i, Type: a, IRI: r.EntityIRI },
-                          s = L(l);
+                          s = L(u, l);
                         o.editor.graph.model.setStyle(t, p),
                           o.editor.graph.model.setValue(t, s);
                       }
@@ -1671,10 +1673,9 @@
         },
         j = (e, t) => {
           let o = document.createElement("div");
-          (o.innerHTML = e), console.log(e);
-          let n = o.textContent || o.innerText || "";
-          console.log(n);
-          let r = n.replace(/([<<|\(].*[>>|\)])/g, "").trim(),
+          o.innerHTML = e;
+          let n = o.textContent || o.innerText || "",
+            r = n.replace(/([<<|\(].*[>>|\)])/g, "").trim(),
             i = n.replace(r, t),
             l = document.createElement("div");
           return (l.innerText = i), l.innerHTML;
@@ -1688,10 +1689,9 @@
               .join(";") + `fillColor=${o};`
           );
         },
-        L = (e) => {
-          let t = mxUtils.createXmlDocument().createElement("object");
-          for (let [o, n] of Object.entries(e)) t.setAttribute(o, n);
-          return t;
+        L = (e, t) => {
+          for (let [o, n] of Object.entries(t)) e.setAttribute(o, n);
+          return e;
         };
       var H = o(431),
         F = {};
@@ -1782,7 +1782,14 @@
           }
           return t;
         },
-        Z = (e) => {
+        Z = (e) =>
+          e.style
+            .split(";")
+            .filter(
+              (e) => !e.includes("strokeWidth") && !e.includes("strokeColor")
+            )
+            .join(";") + "strokeWidth=3;strokeColor=#CC0000;",
+        M = (e) => {
           var o = document.createElement("div");
           (o.id = "convertor-app"),
             (o.style =
@@ -1824,7 +1831,7 @@
                 init() {
                   let e = document.createElement("div");
                   (e.innerHTML =
-                    '<div class="mapping-tool"> <form action="multipart/form-data"> <input type="file" name="myfile" required value="upload" style="max-width:90px"/> <div class="selector"> <label>filetype</label> <select name="filetype"> <option value="excel">excel</option> </select> </div> <div class="selector"> <label>decimal</label> <select name="decimal"> <option value=".">.</option> <option value=",">,</option> </select> </div> <div class="selector"> <label>NRow</label> <input type="number" name="startRow" value="0" required min="0"> </div> <input type="submit" name="submit"/> </form> <div> <div class="mapping-error"></div> <div class="mapping-table"> <div style="height:290px;width:100%"> Under development </div>  </div> <div class="mapping-count"> Rows:0; Columns:0; Only shows the first 100. </div> </div> </div>'),
+                    '<div class="mapping-tool"> <form action="multipart/form-data"> <input type="file" name="myfile" required value="upload" style="max-width:100px"/> <div class="selector"> <label>filetype</label> <select name="filetype"> <option value="excel">excel</option> </select> </div> <div class="selector"> <label>decimal</label> <select name="decimal"> <option value=".">.</option> <option value=",">,</option> </select> </div> <div class="selector"> <label>NRow</label> <input type="number" name="startRow" value="0" required min="0"> </div> <input type="submit" name="submit"/> </form> <div> <div class="mapping-error"></div> <div class="mapping-table"> <div style="height:290px;width:100%"> Under development </div>  </div> <div class="mapping-count"> Rows:0; Columns:0; Only shows the first 100. </div> </div> </div>'),
                     (this.mappingWindow = e);
                   let t = e.querySelector("form");
                   t.onsubmit = (e) => {
@@ -1898,15 +1905,20 @@
                                         .replace(i, "")
                                         .trim()
                                         .toLowerCase();
-                                    ["individual", "datavalue"].includes(l)
-                                      ? (r.setAttribute("MappingCol", e),
-                                        t.editor.graph.model.setValue(n, r))
-                                      : ((o.innerText =
-                                          "Mapping is only possible for individual or datavalue."),
+                                    if (
+                                      ["individual", "datavalue"].includes(l)
+                                    ) {
+                                      r.setAttribute("MappingCol", e);
+                                      let o = Z(n);
+                                      t.editor.graph.model.setValue(n, r),
+                                        t.editor.graph.model.setStyle(n, o);
+                                    } else
+                                      (o.innerText =
+                                        "Mapping is only possible for individual or datavalue."),
                                         (o.style.display = "block"),
                                         setTimeout(() => {
                                           o.style.display = "none";
-                                        }, 5e3));
+                                        }, 5e3);
                                   } else
                                     (o.innerText =
                                       "This shape is not from ontopanel-library."),
@@ -2701,7 +2713,10 @@
                       ),
                       l = this.data.content,
                       a = O(this.ui, l, r, this.wnd, this.treeContent);
-                    i.replaceWith(a);
+                    (a.oncontextmenu = (e) => {
+                      e.stopPropagation();
+                    }),
+                      i.replaceWith(a);
                   }
                   foldAll = () => {
                     let e = this.treeContent.querySelectorAll("ul >li");
@@ -3353,7 +3368,7 @@
         o.actions.addAction("entityfinderOld", function () {
           a.setVisible(!a.isVisible());
         });
-        let s = Z(o);
+        let s = M(o);
         o.actions.addAction("convertor", function () {
           s.setVisible(!s.isVisible());
         });

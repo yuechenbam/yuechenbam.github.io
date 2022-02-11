@@ -53,32 +53,16 @@ Please click to see how to use the plugin of Convertor:
 
 https://user-images.githubusercontent.com/90606851/151398860-ee07dd9e-8f8c-4e3e-add1-2e923fa4d1f0.mp4
 
-### Version
+### Version(more in ChangeLog)
 
-**01.02.2022(latest):**
+**11.02.2022(latest):**
+
+- activate copy function(right click)
+- data mapping for excel file is available
+  - add stroke colors to the mapping shapes for better identification
+
+**01.02.2022:**
 
 - new version Ontopanel-pipeline is released.
   - library, entityfinder, and convertor are added.
-
-**22.11.2021:**
-
-- new version Ontopanel is released. ImportOnto might be removed later.
-  - You can register and login. Data is saved in databank. Please do **NOT** keep confidential data in the database.
-  - Changed table structure to tree structure, and added more details of each entity.(Similar to Protege)
-  - Probelm: due to server problem, you can not import large ontology files, this will be solved with new server.
-  - If you have any suggestions, please write me an email or open an issue here.
-
-**12.10.2021:**
-
-- Activate "+" button. You can import ontology via file or URL now.
-
-**06.10.2021:**
-
-- Added colors to the MESO ontology, datavalue button, and a prefix button to output the namespaces used in this ontology.
-
-- Color descriptions (including inferred subclasses):
-  - Subclasses of process (equivalent to continuant in BWMD) in green: "#1C9E71",
-  - Subclasses of InformationContentEntities (equivalent to ocurrent in BWMD) in yellow: "#F0F000",
-  - Subclasses of InformationBearingArtifact (equivalent to quality in BWMD) in gray: "#DADADA",
-  - DataValues in orange: "#FF8C00", taken from Protege.
-  - Rest in black.
+-
