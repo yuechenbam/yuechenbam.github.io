@@ -1,4 +1,10 @@
-**11.02.2022(latest): v2.2**
+**16.02.2022(latest): v2.2**
+
+- convertor
+  - add reset button
+  - add csv format for uploading files.
+
+**11.02.2022: v2.2**
 
 - activate copy function(right click)
 - data mapping for excel file is available

@@ -17,15 +17,7 @@ A simplified version of the protege in Drawio.
 
 Advanced version of the embedded chowlk converter allowing users to convert drawings in ontologies directly into Drawio.
 
-#### Problems to be solved
-
-1. If the user is not very familiar with the library, they cant understand the meaning of shapes.
-2. Impossible to display rdflabel instead of URI. Many ontologies use numeric URIs which are difficult to read.
-3. Lack of detailed validation. Chowlk provides very simple validation. More detailed validation like the rules in OWL would be useful.
-
-#### Development plan.
-
-1. Modify the library.
+1. New ontopanel library.
 2. Build converter: convert, validate, make reports and show errors on the drawings.
 3. Adjust ontopanel to pass the new library and converter.
 
@@ -35,7 +27,10 @@ Embed data mapping tool to allow users to do data mapping in Drawio.
 
 ### Stage4 Ontopanel-customizedValidator(in progress)
 
-## Suggestions(to change)
+## Suggestions
 
-1. Cant copy and pasta of entity text and details(the right click is disabled)
-2. After search, only shows superclasses, underclasses disappers, not good to know which this class contains
+1. After search, only shows superclasses, underclasses disappers, not good to know which this class contains
+2. Mapping tool
+   1. how to modify url
+   2. more output format
+   3. mapping missing values in dataset, as removed nodes.
