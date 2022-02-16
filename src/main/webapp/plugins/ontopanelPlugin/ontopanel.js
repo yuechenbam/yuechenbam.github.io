@@ -1813,7 +1813,7 @@
             n.setMaximizable(!1),
             n.setResizable(!1),
             n.setClosable(!0),
-            n.setVisible(!0);
+            n.setVisible(!1);
           let r = o.querySelector('input[name="convert"]'),
             i = o.querySelector('input[name="transform"]'),
             l = o.querySelector('input[name="mapping"]'),
