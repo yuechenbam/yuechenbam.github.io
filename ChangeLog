@@ -1,4 +1,13 @@
-**16.02.2022(latest): v2.2**
+**15.03.2022(latest): v2.2**
+
+- Convertor
+  - add a search bar and copyall btn in OWL result.
+  - download files with right extension.
+- EntityManager
+  - rename to EntityManager
+  - update tips for namespaces in ReadMe and allowed combinations in Ontopanel-Library.
+
+**16.02.2022: v2.2**
 
 - convertor
   - add reset button

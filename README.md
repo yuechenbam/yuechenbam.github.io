@@ -56,20 +56,14 @@ https://user-images.githubusercontent.com/90606851/153622067-b3c062b1-92ee-470e-
 
 ### Version(more in ChangeLog)
 
-**16.02.2022(latest):**
+**15.03.2022(latest): v2.2**
 
-- convertor
-  - add reset button
-  - add csv format for uploading files.
+- Convertor
+  - add a search bar and copyall btn in OWL result.
+  - download files with right extension.
+- EntityManager
 
-**11.02.2022:**
-
-- activate copy function(right click)
-- convertor
-  - data mapping for excel file is available
-  - add stroke colors to the mapping shapes for better identification
-- entityfinder
-
-  - update and delete uploaded ontologies(right click ontology name button)
+  - rename to EntityManager
+  - update tips for namespaces in ReadMe and allowed combinations in Ontopanel-Library.
 
 -
