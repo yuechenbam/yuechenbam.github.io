@@ -1814,7 +1814,10 @@
               let t = this.resultShow.getElementsByTagName("mark");
               if (t && t.length > 0) {
                 this.markIndex >= t.length && (this.markIndex = 0),
-                  t[this.markIndex].scrollIntoView(),
+                  t[this.markIndex].scrollIntoView({
+                    block: "nearest",
+                    inline: "nearest",
+                  }),
                   t[this.markIndex].classList.add("locate");
                 let e =
                   this.markIndex - 1 >= 0 ? this.markIndex - 1 : t.length - 1;
