@@ -10,7 +10,7 @@ This is a beta version, please let me know if you have any comments(yue.chen@bam
 
 ## Ontopanel
 
-The Ontopanel plugin contains three parts(tools): Ontopanel-Libary, EntityFinder, and Convertor
+The Ontopanel plugin contains three parts(tools): Ontopanel-Libary, EntityManager, and Convertor
 
 ### Ontopanel-Library
 
@@ -21,11 +21,11 @@ The library is designed for whole Ontopanel plugin. It is based on Chowlk libary
 3. All the shape contains a "Type" attribute, Class, ObjectProperty, DatatypeProperty, AnnotationProperty, DataType, DataValue and Individual contain also "IRI" attribute.
 4. "Type", "IRI_XX", "Mapping_XX" are preserved words, try not to use them for other purposes in shape data.
 
-### Ontopanel-EntityFinder
+### Ontopanel-EntityManager
 
-EntityFinder is a tool that allows user to upload their ontologies and export in drawio.
-EntitiyFinder has a built-in MSEO ontology, but users can upload their own ontologies. Registered users can also save their ontologies in the database.
-EntitiyFinder is designed as a simplified version of protege. So it should display all entities in tree structure and all details (annotations, sub-relations, equivalents, domains, ranges...) in a tree structure . If there is any information missing, you can contact me to fix the bug.
+EntityManager is a tool that allows user to upload their ontologies and export in drawio.
+EntitiyManager has a built-in MSEO ontology, but users can upload their own ontologies. Registered users can also save their ontologies in the database.
+EntitiyManager is designed as a simplified version of protege. So it should display all entities in tree structure and all details (annotations, sub-relations, equivalents, domains, ranges...) in a tree structure . If there is any information missing, you can contact me to fix the bug.
 
 #### New features
 
