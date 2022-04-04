@@ -37,7 +37,7 @@ EntitiyManager is designed as a simplified version of protege. So it should disp
 
 The old version, which is suitable for chowlk library. It contains most features.
 
-Please click to see how to use the plugin of EntityFinder:
+Please click to see how to use the plugin of EntityManager:
 
 https://user-images.githubusercontent.com/90606851/153627154-461022aa-f002-4fcd-ab5a-363996754233.mp4
 
