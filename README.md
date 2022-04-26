@@ -1,10 +1,16 @@
 ## About
 
-This is a fork of [diagrams.net](https://app.diagrams.net), [previously draw.io](https://www.diagrams.net/blog/move-diagrams-net).
+This is a demo of [diagrams.net](https://app.diagrams.net) with Ontopanel plugin on the GithubPage.
 
-There is one plugin ontopanel, which can be found via Extra-Plugins. Click [drawio interface](https://yuechenbam.github.io/src/main/webapp/index.html) to get full editor functionality of the plugin version.
+Ontopanel is a plugin designed for ontology development in diagrams.net and can be found via Extra-plugins. 
 
-If you see any updates to this project, be sure to clear your cache (history) before opening it, otherwise the new features will not show up. If you see the error in other browsers, please use Chrome to open it.
+**Please note! The official Diagrams.net website does not contain this plugin, only this version here.**
+
+Visit Ontopanel-diagrams.net version: [diagrams.net with Ontopanel](https://yuechenbam.github.io/src/main/webapp/index.html)
+
+Because this plugin version is hosted in the GithubPage, only the editor feature is available, other features related to Git or Collarbtion are not available.
+
+If you see the error in other browsers, please use Chrome to open it.
 
 This is a beta version, please let me know if you have any comments(yue.chen@bam.de).
 
