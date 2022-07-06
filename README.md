@@ -4,7 +4,7 @@ Ontopanel is a plugin in [diagrams.net](https://app.diagrams.net) that helps dom
 
 It is designed within the framework of the [Materials Open Laboratory (MatOLab)](https://github.com/Mat-O-Lab) by [Bundesanstalt für Materialforschung und -prüfung (BAM)](https://www.bam.de/Navigation/DE/Home/home.html) to solve the problems encountered by domain experts when building ontologies graphically using diagrames.net, such as ontology reuse, ontology transformation and data mapping.
 
-## About
+## About this
 
 This is a demo of diagrams.net with Ontopanel plugin on the GithubPage. Ontopanel can be loaded via Extra-plugins. 
 
@@ -18,7 +18,7 @@ If you see the error in other browsers, please use Chrome to open it.
 
 This is a beta version, and if you want to host your own application, please find the [source code](#related-repositories-and-links) below.
 
-## Ontopanel
+## Tutorials
 
 The Ontopanel plugin contains three parts(tools): Libary, EntityManager, and Convertor
 
@@ -46,7 +46,7 @@ EntitiyManager is designed as a simplified version of Protégé. So it should di
 
 The old version, which is suitable for chowlk library. It contains most features.
 
-#### Tutorial
+#### Video
 
 Please click to see how to use the plugin of EntityManager:
 
@@ -61,7 +61,7 @@ Convertor that convert current plot to owl ontology.
 3. User can realize data-mapping.
 4. If chowlk libary, instead of ontopanel-libary are used, please transform it first.
 
-#### Tutorial
+#### Video
 
 Please click to see how to use the plugin of Convertor:
 
