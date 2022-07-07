@@ -14,17 +14,17 @@ Visit Ontopanel-diagrams.net version: [diagrams.net with Ontopanel](https://yuec
 
 Because this plugin version is hosted in the GithubPage, only the editor feature is available, other features related to Git or Collarbtion are not available.
 
-If you see the error in other browsers, please use Chrome to open it.
+This is a beta version, please consider hosting it on a dynamic server to get the full functionality of diagrams.net.
 
-This is a beta version, and if you want to host your own application, please find the [source code](#related-repositories-and-links) below.
+If you see the error in other browsers, please use Chrome to open it.
 
 ## Tutorials
 
-The Ontopanel plugin contains three parts(tools): Libary, EntityManager, and Convertor
+The Ontopanel plugin contains three parts (tools): Library, EntityManager, and Convertor.
 
 ### Ontopanel-Library
 
-The library is designed for whole Ontopanel plugin. It is based on Chowlk libary, but has some different features.
+The library is designed for whole Ontopanel plugin. It is based on [Chowlk libary](https://chowlk.linkeddata.es/notation.html), so please check their notations to understand it. It has some different features from Chowlk library:
 
 1. Load automatically in the sidebar.
 2. Each shape has hover effect and shape data.
@@ -33,8 +33,8 @@ The library is designed for whole Ontopanel plugin. It is based on Chowlk libary
 
 ### Ontopanel-EntityManager
 
-EntityManager is a tool that allows user to upload their ontologies and export into the graph in diagrams.net.
-EntitiyManager has a built-in MSEO ontology, but users can upload their own ontologies. Registered users can also save their ontologies in the database.
+EntityManager is a tool that allows user to upload their ontologies and export into the graph in diagrams.net. It has a built-in MSEO ontology, but users can upload their own ontologies. Registered users can also save their ontologies in the database.
+
 EntitiyManager is designed as a simplified version of Protégé. So it should display all entities and all details (annotations, sub-relations, equivalents, domains, ranges...) in a tree structure. If there is any information missing, you can contact me to fix the bug.
 
 1. Upload ontologies.
@@ -66,6 +66,23 @@ Convertor that convert current plot to owl ontology.
 Please click to see how to use the plugin of Convertor:
 
 https://user-images.githubusercontent.com/90606851/153622067-b3c062b1-92ee-470e-a685-1d3549b85216.mp4
+
+
+## Architecture and limitations:
+The entire application contains a front-end, a back-end and a database. This online service is for demo purposes only, so its performance is limited by the server.
+Please consider hosting this application with [source codes](#related-repositories-and-links) on your own servers to remove the limitations.
+
+![Architecture](https://user-images.githubusercontent.com/90606851/177772065-5fe3b728-8893-4084-9086-b1e711d642d2.png)
+
+### Frontend
+The Frontend is hosted on this GitHubPage. So only the editor feature of diagrams.net is available, other features related to Git or Collarbtion are not available.
+
+Please consider hosting it on a dynamic server to get the full functionality of diagrams.net.
+
+### Backend
+The backend server has a 30-second request timeout limit, so the uploaded ontology size is also limited to about 2,000 entities, otherwise the server will not be able to process the data in time.
+
+Please consider hosting it on your own server without the request timeout limit.
 
 ### Version(more in ChangeLog)
 
