@@ -84,7 +84,14 @@ The backend server has a 30-second request timeout limit, so the uploaded ontolo
 
 Please consider hosting it on your own server without the request timeout limit.
 
-### Version(more in ChangeLog)
+
+## Related repositories and links
+
+[Ontopanel-fontend](https://github.com/yuechenbam/Ontopanel-frontend) - Ontopanel's frontend source code.
+
+[Ontopanel-backend](https://github.com/yuechenbam/Ontopanel-backend) - Ontopanel's backend source code.
+
+## Version(more in ChangeLog)
 
 **15.03.2022(latest): v2.2**
 
@@ -95,12 +102,6 @@ Please consider hosting it on your own server without the request timeout limit.
 
   - rename to EntityManager
   - update tips for namespaces in ReadMe and allowed combinations in Ontopanel-Library.
-
-## Related repositories and links
-
-[Ontopanel-fontend](https://github.com/yuechenbam/Ontopanel-frontend) - Ontopanel's frontend source code.
-
-[Ontopanel-backend](https://github.com/yuechenbam/Ontopanel-backend) - Ontopanel's backend source code.
 
 ## Contact
 
