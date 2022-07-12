@@ -52,7 +52,13 @@ The old version, which is suitable for chowlk library. It contains most features
 
 Please click to see how to use the plugin of EntityManager:
 
-https://user-images.githubusercontent.com/90606851/153627154-461022aa-f002-4fcd-ab5a-363996754233.mp4
+
+
+
+https://user-images.githubusercontent.com/90606851/178446485-993ea65f-c41a-4dc7-bdf0-d1f3b013be8a.mp4
+
+
+
 
 ### Ontopanel-Convertor
 
@@ -71,7 +77,8 @@ Convertor that convert current plot to owl ontology.
 
 Please click to see how to use the plugin of Convertor:
 
-https://user-images.githubusercontent.com/90606851/153622067-b3c062b1-92ee-470e-a685-1d3549b85216.mp4
+
+https://user-images.githubusercontent.com/90606851/178434348-c5b8615a-0434-412b-9095-06648e9ad2b8.mp4
 
 
 ## Architecture and limitations:
@@ -99,15 +106,9 @@ Please consider hosting it on your own server without the request timeout limit.
 
 ## Version(more in ChangeLog)
 
-**15.03.2022(latest): v2.2**
+**07.12.2022(latest): v2.2**
 
-- Convertor
-  - add a search bar and copyall btn in OWL result.
-  - download files with right extension.
-- EntityManager
-
-  - rename to EntityManager
-  - update tips for namespaces in ReadMe and allowed combinations in Ontopanel-Library.
+- update tutorial videos
 
 ## Contact
 
