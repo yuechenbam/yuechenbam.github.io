@@ -27,20 +27,22 @@ The Ontopanel plugin contains three parts (tools): Library, EntityManager, and C
 The library is designed for whole Ontopanel plugin. It is based on [Chowlk libary](https://chowlk.linkeddata.es/notation.html), so please check their notations to understand it. It has some different features from Chowlk library:
 
 1. Load automatically in the sidebar.
-2. Each shape has hover effect and shape data.
+2. Each shape has hover effect and shape data. Shape data can be viewed and edited by "choose a shape, right-click, edit data"
 3. All the shape contains a "Type" attribute, Class, ObjectProperty, DatatypeProperty, AnnotationProperty, DataType, DataValue and Individual contain also "IRI" attribute.
 4. "Type", "IRI_XX", "Mapping_XX" are preserved words, try not to use them for other purposes in shape data.
+5. It is recommended to always use shapes to create any entities, because their initial "IRI" is "Null".
 
 ### Ontopanel-EntityManager
 
-EntityManager is a tool that allows user to upload their ontologies and export into the graph in diagrams.net. It has a built-in MSEO ontology, but users can upload their own ontologies. Registered users can also save their ontologies in the database.
-
-EntitiyManager is designed as a simplified version of Protégé. So it should display all entities and all details (annotations, sub-relations, equivalents, domains, ranges...) in a tree structure. If there is any information missing, you can contact me to fix the bug.
+EntityManager is a tool that allows user to upload their ontologies and export into the graph in diagrams.net. It has a built-in MSEO ontology, but users can upload their own ontologies. Registered users can also save their ontologies in the database. EntitiyManager is designed as a simplified version of Protégé. So it should display all entities and all details (annotations, sub-relations, equivalents, domains, ranges...) in a tree structure. If there is any information missing, you can contact me to fix the bug.
 
 1. Upload ontologies.
 2. Display and search entities in IRI or RDFLabel.
 3. Export entities to the graph.
-4. User authentication and ontology storage in databank.
+4. Exported entities can be displayed with its IRI or RDFLabel. Its IRI is saved in shape data.
+5. User authentication and ontology storage in databank.
+
+**Please note! Convertor first tries to identify this entity with its "IRI" in shape data, and if the "IRI" is empty, then it identifies its label (text). So if you change only the label (text) and the "IRI" in the shape data is not "Null", Convertor will use the "IRI" instead of the label you entered. So it is not recommended to create new entities by copying them and changing their labels.**
 
 #### EntityFinder(old)
 
@@ -56,10 +58,14 @@ https://user-images.githubusercontent.com/90606851/153627154-461022aa-f002-4fcd-
 
 Convertor that convert current plot to owl ontology.
 
+**Please note! Each exported entity has its "IRI" saved in the shape data. Convertor first tries to identify this entity with its "IRI", and if the "IRI" is empty, then it identifies its label (text).**
+
 1. It can check the errors that are made in plot.
+2. Transform button:If the plot was made with chowlk libary, instead of ontopanel-libary, transform is available.
 2. User can download the file.
-3. User can realize data-mapping.
-4. If chowlk libary, instead of ontopanel-libary are used, please transform it first.
+3. User can realize data-mapping. 
+4. All mapped entities are bordered with red color. And their mapping informtion are saved in the shape data. If you want to remove mapping, then delete this mapping information in the shape data.
+
 
 #### Video
 
