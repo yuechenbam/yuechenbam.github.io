@@ -6,7 +6,7 @@ It is designed within the framework of the [Materials Open Laboratory (MatOLab)]
 
 ## About this
 
-This is a demo of diagrams.net with Ontopanel plugin on the GithubPage. Ontopanel can be loaded via Extra-plugins. 
+This is a demo of diagrams.net with Ontopanel plugin on the GithubPage. Ontopanel can be loaded via Extra-plugins.
 
 **Please note! The official Diagrams.net website does not contain this plugin, only this version here.**
 
@@ -17,6 +17,10 @@ Because this plugin version is hosted in the GithubPage, only the editor feature
 This is a beta version, please consider hosting it on a dynamic server to get the full functionality of diagrams.net.
 
 If you see the error in other browsers, please use Chrome to open it.
+
+## Warning
+
+Please note that this demo tool uses a backend hosted on a non-EU server and therefore your data may be processed on a non-EU server. The provision of any personal or confidential information is at the user's own risk. The personal registration is optional; non-registered users can use this tool without any limitation of funtionality.
 
 ## Tutorials
 
@@ -52,13 +56,7 @@ The old version, which is suitable for chowlk library. It contains most features
 
 Please click to see how to use the plugin of EntityManager:
 
-
-
-
 https://user-images.githubusercontent.com/90606851/178446485-993ea65f-c41a-4dc7-bdf0-d1f3b013be8a.mp4
-
-
-
 
 ### Ontopanel-Convertor
 
@@ -68,47 +66,40 @@ Convertor that convert current plot to owl ontology.
 
 1. It can check the errors that are made in plot.
 2. Transform button:If the plot was made with chowlk libary, instead of ontopanel-libary, transform is available.
-2. User can download the file.
-3. User can realize data-mapping. 
-4. All mapped entities are bordered with red color. And their mapping informtion are saved in the shape data. If you want to remove mapping, then delete this mapping information in the shape data.
-
+3. User can download the file.
+4. User can realize data-mapping.
+5. All mapped entities are bordered with red color. And their mapping informtion are saved in the shape data. If you want to remove mapping, then delete this mapping information in the shape data.
 
 #### Video
 
 Please click to see how to use the plugin of Convertor:
 
-
 https://user-images.githubusercontent.com/90606851/178434348-c5b8615a-0434-412b-9095-06648e9ad2b8.mp4
 
-
 ## Architecture and limitations:
+
 The entire application contains a front-end, a back-end and a database. This online service is for demo purposes only, so its performance is limited by the server.
 Please consider hosting this application with [source codes](#related-repositories-and-links) on your own servers to remove the limitations.
 
 ![Architecture](https://user-images.githubusercontent.com/90606851/177772065-5fe3b728-8893-4084-9086-b1e711d642d2.png)
 
 ### Frontend
+
 The Frontend is hosted on this GitHubPage. So only the editor feature of diagrams.net is available, other features related to Git or Collarbtion are not available.
 
 Please consider hosting it on a dynamic server to get the full functionality of diagrams.net.
 
 ### Backend
+
 The backend server has a 30-second request timeout limit, so the uploaded ontology size is also limited to about 2,000 entities, otherwise the server will not be able to process the data in time.
 
 Please consider hosting it on your own server without the request timeout limit.
 
-
 ## Related repositories and links
 
-[Ontopanel-fontend](https://github.com/yuechenbam/Ontopanel-frontend) - Ontopanel's frontend source code.
+[Ontopanel-frontend](https://github.com/yuechenbam/Ontopanel-frontend) - Ontopanel's frontend source code.
 
 [Ontopanel-backend](https://github.com/yuechenbam/Ontopanel-backend) - Ontopanel's backend source code.
-
-## Version(more in ChangeLog)
-
-**07.12.2022(latest): v2.2**
-
-- update tutorial videos
 
 ## Contact
 
